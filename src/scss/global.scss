@@ -1,0 +1,89 @@
+// reset样式
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+h3,
+ul,
+ol,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+	outline: none;
+	font-size: inherit;
+}
+
+
+
+body {
+  background: #FAFAFA;
+  color: #585858;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+// ele-reset
+.el-header {
+  padding: 0;
+  height: auto !important;
+}
+
+
+
+// 公有样式
+.part_wrap {
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.header {
+  position: relative;
+  width: 20vw;
+  padding-left: 15px;
+  font-size: 23px;
+  line-height: 34px;
+  color: #fff;
+  background: #40a3bc;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  z-index:1;
+  right:-33px;
+
+  border-top: 17px solid  transparent;
+  border-bottom: 17px solid  transparent;
+  border-right: 17px solid  transparent;
+  border-left: 17px solid #40a3bc;
+}
+
+@media (max-width: 765px) {
+  .header  { width: 35vw; }
+}
+
+
+.fp {
+  flex-wrap: wrap;
+}
+
+.pad5 {
+  padding: 5px 0;
+}
